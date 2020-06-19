@@ -1,7 +1,8 @@
 #include <string>
+#include "CCompas.h"
 #include "Controleur_Deplacement.h"
 using namespace std;
-// V1
+// V2
 #pragma once
 class CMoteur
 {
@@ -10,6 +11,9 @@ public:
 	CMoteur();
 	void ActiveMoteur(Controleur_Deplacement::MOVE move);
 
+private:
+	CCompas compas;
+		
 	//Accesseurs et mutateurs
 
 
