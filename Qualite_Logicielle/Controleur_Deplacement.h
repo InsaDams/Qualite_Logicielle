@@ -16,6 +16,11 @@ public:
 	CCompas compas;
 	CCommande commande;*/
 	//Accesseurs et mutateurs
+	struct Pos
+	{
+		int x; // Abscisses
+		int y; // Ordonnées
+	};
 
 private:
 
