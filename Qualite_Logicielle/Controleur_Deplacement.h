@@ -3,15 +3,14 @@
 #include "Robiot.h"
 #define PATH "C:/Users/Goron/Desktop/terrain.txt"
 using namespace std;
-
+// V1
 #pragma once
 class Controleur_Deplacement
 {
 public:
 	// Constructeurs
-	
+	enum MOVE { UP = 0, DOWN=1, LEFT=2, RIGHT=3 };
 	/*CMoteur moteur;
-	CMesure mesure;
 	CBatterie batterie;
 	CCapteur capteur;
 	CCompas compas;
