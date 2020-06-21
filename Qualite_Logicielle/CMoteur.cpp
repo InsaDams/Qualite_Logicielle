@@ -8,20 +8,20 @@ CMoteur::CMoteur() : compas()
 	
 }
 
-void CMoteur::ActiveMoteur(Controleur_Deplacement::MOVE move)
+void CMoteur::ActiveMoteur(CCompas::MOVE move)
 {
 	switch (move)
 	{
-	case Controleur_Deplacement::UP :
+	case CCompas::UP :
 		compas.MoveUp();
 			break;
-	case Controleur_Deplacement::DOWN:
+	case CCompas::DOWN:
 		compas.MoveDown();
 		break;
-	case Controleur_Deplacement::LEFT:
+	case CCompas::LEFT:
 		compas.MoveLeft();
 		break;
-	case Controleur_Deplacement::RIGHT:
+	case CCompas::RIGHT:
 		compas.MoveRight();
 		break;
 	default:

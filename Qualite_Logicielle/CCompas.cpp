@@ -22,9 +22,9 @@ void CCompas::MoveDown()
 	pos_y = pos_y + 1;
 }
 
-Controleur_Deplacement::Pos CCompas::GetPosition()
+CCompas::Pos CCompas::GetPosition()
 {
-	Controleur_Deplacement::Pos point = {pos_x,pos_y};
+	CCompas::Pos point = {pos_x,pos_y};
 	return point;
 }
 

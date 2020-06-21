@@ -1,21 +1,25 @@
 #include <string>
+#include "CMoteur.h"
+#include "CBatterie.h"
+#include "CCommande.h"
 using namespace std;
-// V1
+// V2
 #pragma once
 class Robiot
 {
 public:
 	// Constructeurs
-	Robiot(string pathfile);
-	/*CMoteur moteur;
+	Robiot(string pathfile1, string pathfile2);
+
+	CMoteur moteur;
 	CBatterie batterie;
-	CCapteur capteur;
-	CCompas compas;
-	CCommande commande;*/
+	////CCapteur capteur;
+	CCommande commande;
 	//Accesseurs et mutateurs
 
 private:
-	string path;
+	string path1;
+	string path2;
 
 };
 

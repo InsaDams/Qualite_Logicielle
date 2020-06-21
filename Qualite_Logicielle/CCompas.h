@@ -1,4 +1,4 @@
-#include "Controleur_Deplacement.h"
+//#include "Controleur_Deplacement.h"
 #pragma once
 
 //V1
@@ -10,13 +10,18 @@ private:
 	int pos_y;
 
 public:	
+	struct Pos
+	{
+		int x; // Abscisses
+		int y; // Ordonnées
+	};
 	void MoveRight();
 	void MoveLeft();
 	void MoveUp();
 	void MoveDown();
-
-	Controleur_Deplacement::Pos GetPosition();
-
+	enum MOVE { UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3 };
+	Pos GetPosition();
+	
 	CCompas();
 
 
