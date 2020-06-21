@@ -1,7 +1,7 @@
 //#include "Controleur_Deplacement.h"
 #pragma once
 
-//V1
+//V2
 
 class CCompas
 {

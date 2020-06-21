@@ -4,7 +4,7 @@
 #define CONSOARM 12.5
 #define TEMPSMESURE 5
 
-
+//V2
 
 class CBatterie
 {
