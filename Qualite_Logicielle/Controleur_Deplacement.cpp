@@ -24,6 +24,10 @@ int main()
 
 
 
+Controleur_Deplacement::Controleur_Deplacement()
+{
+}
+
 void Controleur_Deplacement::Init()
 {
 	
