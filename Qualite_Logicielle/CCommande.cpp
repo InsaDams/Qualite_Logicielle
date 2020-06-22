@@ -25,7 +25,7 @@ CCompas::Pos CCommande::GetNextPos()
 
 int CCommande::GetNbArbres()
 {
-	_myList.size();
+	return _myList.size();
 }
 
 void CCommande::ReadCommand()
