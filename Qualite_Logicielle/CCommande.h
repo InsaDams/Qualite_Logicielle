@@ -13,6 +13,7 @@ public:
 	// Constructeurs
 	CCommande(string path);
 	CCompas::Pos GetNextPos();
+	int GetNbArbres();
 
 private:
 	void ReadCommand();

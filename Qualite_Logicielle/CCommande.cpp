@@ -10,13 +10,27 @@ CCommande::CCommande(string path) : _path(path)
 
 CCompas::Pos CCommande::GetNextPos()
 {
-	iterator++;
-	_currentpos = _myList[iterator];
+	if (iterator < _myList.size())
+	{
+		iterator++;
+		_currentpos = _myList[iterator];
+	}
+	else
+	{
+		iterator = -1;
+		_currentpos = CCompas::Pos{ 0,0 };
+	}
 	return _currentpos;
+}
+
+int CCommande::GetNbArbres()
+{
+	_myList.size();
 }
 
 void CCommande::ReadCommand()
 {
+	
 	ifstream stream(_path);
 	if (stream)
 	{
