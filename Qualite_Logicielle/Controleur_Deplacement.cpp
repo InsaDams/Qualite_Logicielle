@@ -17,8 +17,8 @@ int main()
 	_robiot.moteur.ActiveMoteur(CCompas::LEFT);
 	_robiot.commande.GetNextPos();
 	_currentpos = _robiot.commande.GetNextPos();
-	printf("Position Robot : %d , %d", _robiot.moteur.compas.GetPosition().x, _robiot.moteur.compas.GetPosition().y);
-	printf("Prochaine Destination : %d , %d", _currentpos.x, _currentpos.y);
+	printf("Position Robot : %d , %d\n", _robiot.moteur.compas.GetPosition().x, _robiot.moteur.compas.GetPosition().y);
+	printf("Prochaine Destination : %d , %d\n", _currentpos.x, _currentpos.y);
 }
 
 

@@ -6,13 +6,14 @@
 #include <iostream>
 using namespace std;
 #pragma once
-
+//V2
 class CCommande
 {
 public:
 	// Constructeurs
 	CCommande(string path);
 	CCompas::Pos GetNextPos();
+	int GetNbArbres();
 
 private:
 	void ReadCommand();
