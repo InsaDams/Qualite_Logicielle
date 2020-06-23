@@ -140,3 +140,5 @@ void CCapteur::Filltab(string ligne,int iterator)
 
 
 
+//Metrique : Comment Only  :  lignes 4.9 %
+//                            Caractères :41.0 %

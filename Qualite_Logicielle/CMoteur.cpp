@@ -34,3 +34,6 @@ int CMoteur::GetDistance()
 {
 	return _distance;
 }
+
+//Metrique : Comment Only  :  lignes 2.8 %
+//                            Caractères :40 %

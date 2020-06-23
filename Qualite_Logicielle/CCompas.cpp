@@ -44,3 +44,6 @@ CCompas::CCompas()
 	pos_x = 0;
 	pos_y = 0;
 }
+
+//Metrique : Comment Only  :  lignes 13.0 %
+//                            Caractères :41.6 %

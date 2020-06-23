@@ -17,3 +17,7 @@ double CBatterie::getconso()
 {
 	return conso;
 }
+
+
+//Metrique : Comment Only  :  lignes 36.8 %
+//                            Caractères :64.0 %

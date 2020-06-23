@@ -138,7 +138,8 @@ void Controleur_Deplacement::MoveRobiot(CCompas::MOVE move)
 	
 }
 
-
+//Metrique : Comment Only  :  lignes 6.2 %
+//                            Caractères : 43.6 %
 
 
 

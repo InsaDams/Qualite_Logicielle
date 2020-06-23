@@ -6,3 +6,8 @@ Mesure::Mesure()
 {
 
 }
+
+
+
+//Metrique : Comment Only  :  lignes 25.0 %
+//                            Caractères :77.0 %

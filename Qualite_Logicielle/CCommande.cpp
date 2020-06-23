@@ -68,3 +68,6 @@ void CCommande::AddPos(string ligne)
 	
 	
 }
+
+//Metrique : Comment Only  :  lignes 7.1 %
+//                            Caractères : 37.9 %
