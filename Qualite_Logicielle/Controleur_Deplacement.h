@@ -1,10 +1,10 @@
 #pragma once
 #include <string>
 #include "Robiot.h"
-#define PATH1 "../terrain.txt"
-#define PATH2 "../commande.txt"
-#define VITROBOT 0.42
-#define TEMPSMESURE 5.0
+#define PATH1 "../terrain.txt" // Chemin pour le fichier contenant la carte du terrain
+#define PATH2 "../commande.txt" // Chemin pour le fichier contenant les commandes
+#define VITROBOT 0.42			// Vitesse du Robot
+#define TEMPSMESURE 5.0			// Temps d'une mesure en minutes
 using namespace std;
 // V4
 #pragma once
