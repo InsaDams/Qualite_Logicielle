@@ -1,8 +1,8 @@
 #pragma once
-#define CONSOMOTEUR 14.0
-#define CONSOMESURE 30.0
-#define CONSOARM 12.5
-#define TEMPSMESURE 5.0
+#define CONSOMOTEUR 14.0 //Puissance de chaque moteur (1 moteur par roue) en Watt
+#define CONSOMESURE 30.0 //Puissance de l'ensemble des équipements de mesures en Watt
+#define CONSOARM 12.5 //Puissance processeur en Watt
+#define TEMPSMESURE 5.0 //Temps nécessaire pour contrôler un arbre (en minutes)
 
 //V3
 

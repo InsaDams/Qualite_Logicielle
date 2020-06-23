@@ -15,12 +15,18 @@ public:
 		int x; // Abscisses
 		int y; // Ordonnées
 	};
+
 	void SetStart(Pos start);
+
 	void MoveRight();
 	void MoveLeft();
 	void MoveUp();
 	void MoveDown();
+
+	//creation du type de variable MOVE, dont les valeurs possibles sont limitées à celles de l'énumération.
+
 	enum MOVE { UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3 };
+
 	Pos GetPosition();
 	
 	CCompas();

@@ -1,9 +1,11 @@
 #include <string>
 #include "CCompas.h"
 //#include "Controleur_Deplacement.h"
+
 using namespace std;
 // V3
 #pragma once
+
 class CMoteur
 {
 public:
