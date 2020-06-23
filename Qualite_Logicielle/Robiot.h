@@ -2,8 +2,9 @@
 #include "CMoteur.h"
 #include "CBatterie.h"
 #include "CCommande.h"
+#include "CCapteur.h"
 using namespace std;
-// V2
+// V3
 #pragma once
 class Robiot
 {
@@ -13,7 +14,7 @@ public:
 
 	CMoteur moteur;
 	CBatterie batterie;
-	////CCapteur capteur;
+	CCapteur capteur;
 	CCommande commande;
 	//Accesseurs et mutateurs
 

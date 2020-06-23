@@ -1,6 +1,12 @@
 #include "CCompas.h"
 
 
+void CCompas::SetStart(Pos start)
+{
+	pos_x = start.x;
+	pos_y = start.y;
+}
+
 void CCompas::MoveRight()
 {
 	pos_x = pos_x + 1;

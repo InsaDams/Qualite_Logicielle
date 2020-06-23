@@ -1,10 +1,12 @@
 #pragma once
 #include <string>
 #include "Robiot.h"
-#define PATH1 "C:/Users/Pierre-Antoine/Documents/Qualite_Logicielle/Qualite_Logicielle/terrain.txt"
-#define PATH2 "C:/Users/Pierre-Antoine/Documents/Qualite_Logicielle/Qualite_Logicielle/commande.txt"
+#define PATH1 "C:/Users/Goron/Desktop/terrain.txt"
+#define PATH2 "C:/Users/Goron/Desktop/commande.txt"
+#define VITROBOT 0.42
+#define TEMPSMESURE 5.0
 using namespace std;
-// V2
+// V3
 #pragma once
 class Controleur_Deplacement
 {
@@ -17,8 +19,16 @@ public:
 	
 
 private:
+	int time;
+	int racetime;
+	double conso;
+	Robiot _robiot;
+	CCompas::Pos _startpos;
+	CCompas::Pos _nextpos;
 	CCompas::Pos _currentpos;
 	void Init();
+	void CalculDep();
 	void GestionDeplacement();
-	void SetConso();
+	void ResultSimu();
+	void MoveRobiot(CCompas::MOVE move);
 };

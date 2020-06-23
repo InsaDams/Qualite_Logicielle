@@ -1,7 +1,7 @@
 //#include "Controleur_Deplacement.h"
 #pragma once
 
-//V2
+//V3
 
 class CCompas
 {
@@ -15,6 +15,7 @@ public:
 		int x; // Abscisses
 		int y; // Ordonnées
 	};
+	void SetStart(Pos start);
 	void MoveRight();
 	void MoveLeft();
 	void MoveUp();

@@ -1,13 +1,13 @@
 #include "CBatterie.h"
 //V1
-int CBatterie::calculconso(int tempsparcours, int nbcontroles, int tempstotal)
+double CBatterie::calculconso(int tempsparcours, int nbcontroles, int tempstotal)
 {
-	conso = ((2 * CONSOMOTEUR*tempsparcours / 3600) + (CONSOMESURE*TEMPSMESURE*nbcontroles) / 60) + (CONSOARM*tempstotal / 60);
+	conso =(double)((2 * CONSOMOTEUR*tempsparcours / 3600) + (double)(CONSOMESURE*TEMPSMESURE* (double)nbcontroles) / 60) + (double)(CONSOARM*tempstotal / 3600);
 
 	return conso;
 }
 
-int CBatterie::getconso()
+double CBatterie::getconso()
 {
 	return conso;
 }

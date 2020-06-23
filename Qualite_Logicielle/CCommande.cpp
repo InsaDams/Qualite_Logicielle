@@ -4,7 +4,7 @@
 
 CCommande::CCommande(string path) : _path(path)
 {
-	iterator = -1;
+	iterator = 0;
 	ReadCommand();
 }
 
@@ -12,8 +12,9 @@ CCompas::Pos CCommande::GetNextPos()
 {
 	if (iterator < _myList.size())
 	{
-		iterator++;
+		
 		_currentpos = _myList[iterator];
+		iterator++;
 	}
 	else
 	{
@@ -39,7 +40,6 @@ void CCommande::ReadCommand()
 		while (getline(stream, ligne))
 		{
 			AddPos(ligne);
-			
 		}
 	}
 	else

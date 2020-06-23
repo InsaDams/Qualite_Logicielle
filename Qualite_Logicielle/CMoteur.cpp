@@ -5,7 +5,7 @@
 
 CMoteur::CMoteur() : compas()
 {
-	
+	_distance = 0;
 }
 
 void CMoteur::ActiveMoteur(CCompas::MOVE move)
@@ -27,4 +27,10 @@ void CMoteur::ActiveMoteur(CCompas::MOVE move)
 	default:
 		break;
 	}
+	_distance += 10;
+}
+
+int CMoteur::GetDistance()
+{
+	return _distance;
 }

@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-
+//V2
 using namespace std;
 
 class CCapteur
@@ -29,7 +29,7 @@ public:
 
 	CCapteur(string path);
 	void UpdatePosition(CCompas::Pos point);
-
+	CCompas::Pos GetStart();
 	bool Getarbre();
 	CCapteur::bordure Getbordure();
 	CCapteur::obstacle Getobstacle();

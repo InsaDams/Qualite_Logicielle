@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 #pragma once
-//V2
+//V3
 class CCommande
 {
 public:
