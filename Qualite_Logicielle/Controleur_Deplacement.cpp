@@ -30,36 +30,79 @@ void Controleur_Deplacement::Init()
 
 void Controleur_Deplacement::CalculDep()
 {
+	bool obstacle=false;
 	int dep_x, dep_y;
 	dep_x = _nextpos.x - _currentpos.x;
 	dep_y = _nextpos.y - _currentpos.y;
 	for (int i = 0; i < abs(dep_x); i++)
 	{
-		if (dep_x < 0)
+			if (dep_x < 0)
+			{
+				if (_robiot.capteur.Getobstacle().state && _robiot.capteur.Getobstacle().dir==CCompas::LEFT)
+				{
+					obstacle = true;
+				}
+				else
+				{
+					MoveRobiot(CCompas::LEFT);
+				}
+			}
+			else
+			{
+				if (_robiot.capteur.Getobstacle().state && _robiot.capteur.Getobstacle().dir == CCompas::RIGHT)
+				{
+					obstacle = true;
+				}
+				else
+				{
+					MoveRobiot(CCompas::RIGHT);
+				}
+			}
+		
+		if(obstacle)
 		{
-			MoveRobiot(CCompas::LEFT);
-		}
-		else
-		{
-			MoveRobiot(CCompas::RIGHT);
+			MoveRobiot(CCompas::DOWN);
+			CalculDep();
+			return;
 		}
 	}
+	obstacle=false;
 	for (int i = 0; i < abs(dep_y); i++)
 	{
 		if (dep_y < 0)
 		{
-			MoveRobiot(CCompas::UP);
+			if (_robiot.capteur.Getobstacle().state && _robiot.capteur.Getobstacle().dir == CCompas::UP)
+			{
+				obstacle = true;
+			}
+			else
+			{
+				MoveRobiot(CCompas::UP);
+			}
 		}
 		else
 		{
+			if (_robiot.capteur.Getobstacle().state && _robiot.capteur.Getobstacle().dir == CCompas::DOWN)
+			{
+				obstacle = true;
+			}
+			else
+			{
+				MoveRobiot(CCompas::DOWN);
+			}
+		}
+
+		if (obstacle)
+		{
 			MoveRobiot(CCompas::DOWN);
+			CalculDep();
+			return;
 		}
 	}
 }
 
 void Controleur_Deplacement::GestionDeplacement()
 {
-	
 	_currentpos = _startpos;
 	_nextpos = _robiot.commande.GetNextPos();
 	printf("Prochaine Destination : %d , %d\n", _nextpos.x, _nextpos.y);

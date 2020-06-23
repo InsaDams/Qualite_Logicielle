@@ -1,12 +1,12 @@
 #pragma once
 #include <string>
 #include "Robiot.h"
-#define PATH1 "C:/Users/Goron/Desktop/terrain.txt"
-#define PATH2 "C:/Users/Goron/Desktop/commande.txt"
+#define PATH1 "../terrain.txt"
+#define PATH2 "../commande.txt"
 #define VITROBOT 0.42
 #define TEMPSMESURE 5.0
 using namespace std;
-// V3
+// V4
 #pragma once
 class Controleur_Deplacement
 {
